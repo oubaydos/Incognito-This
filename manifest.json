@@ -1,0 +1,28 @@
+{
+  "name": "Incognito This!",
+  "description": "Incognito This! is a Chrome extension that allows you to open the current tab in an incognito window using the keyboard shortcut Ctrl+Shift+Z (or a click).",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "lock.png",
+    "32": "lock.png",
+    "48": "lock.png",
+    "128": "lock.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "lock.png",
+    "browser_style": true,
+    "default_title": "Incognito This!",
+    "default_area": "browser_action"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+Z",
+        "mac": "Command+Shift+Z"
+      }
+    }
+  },
+  "permissions": ["tabs"]
+}
